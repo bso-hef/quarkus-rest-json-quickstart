@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-18T08:06:46.493Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="5Zqymq47995Lrc58G7nb" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-25T08:55:07.670Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="otenJjY4vn3nBpfy6L6H" version="21.3.3" type="github">
   <diagram id="23iRSUPoRavnBvh4doch" name="Page-1">
-    <mxGraphModel dx="1014" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="362" dy="252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,13 +13,13 @@
         <mxCell id="l94k4rXtLdnM8GT9Tlmm-6" value="&lt;&lt;GET&gt;&gt; + getFruits(): Collection&lt;Fruits&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l94k4rXtLdnM8GT9Tlmm-3" vertex="1">
           <mxGeometry y="68" width="380" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="l94k4rXtLdnM8GT9Tlmm-7" value="&lt;&lt;GET&gt;&gt;&lt;&lt;Path&gt;&gt;{/{id}} + get(id:UUID): Fruits" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l94k4rXtLdnM8GT9Tlmm-3" vertex="1">
+        <mxCell id="l94k4rXtLdnM8GT9Tlmm-7" value="&lt;&lt;GET&gt;&gt;&lt;&lt;Path&gt;&gt;{path=/{id}} + get(id:UUID): Fruits" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l94k4rXtLdnM8GT9Tlmm-3" vertex="1">
           <mxGeometry y="94" width="380" height="26" as="geometry" />
         </mxCell>
         <mxCell id="l94k4rXtLdnM8GT9Tlmm-8" value="&lt;&lt;POST&gt;&gt; + add(fruit: Fruit): Collection&lt;Fruits&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l94k4rXtLdnM8GT9Tlmm-3" vertex="1">
           <mxGeometry y="120" width="380" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="l94k4rXtLdnM8GT9Tlmm-9" value="&lt;&lt;DELETE&gt;&gt;&lt;&lt;Path&gt;&gt;{/{id}} + delete(id: UUID): Collection&lt;Fruits&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l94k4rXtLdnM8GT9Tlmm-3" vertex="1">
+        <mxCell id="l94k4rXtLdnM8GT9Tlmm-9" value="&lt;&lt;DELETE&gt;&gt;&lt;&lt;Path&gt;&gt;{path= /{id}} + delete(id: UUID): Collection&lt;Fruits&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l94k4rXtLdnM8GT9Tlmm-3" vertex="1">
           <mxGeometry y="146" width="380" height="26" as="geometry" />
         </mxCell>
         <mxCell id="l94k4rXtLdnM8GT9Tlmm-10" value="Fruit" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
