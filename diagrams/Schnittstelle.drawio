@@ -1,20 +1,32 @@
-<mxfile host="app.diagrams.net" modified="2023-05-26T07:39:25.973Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="m2o1b_ibo5YY8rkdVr_2" version="21.3.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-26T08:08:02.436Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="zc14N8uhtzYn1ZDvI1PY" version="21.3.4" type="github">
   <diagram name="Seite-1" id="I6iOon1RQX14vJUxu-KA">
-    <mxGraphModel dx="1014" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="6v_-jyaMjuEqhTsef6yV-1" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="530" y="170" width="160" height="86" as="geometry" />
-        </mxCell>
-        <mxCell id="6v_-jyaMjuEqhTsef6yV-2" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="6v_-jyaMjuEqhTsef6yV-1" vertex="1">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="6v_-jyaMjuEqhTsef6yV-1" value="&amp;lt;&amp;lt;Resource&amp;gt;&amp;gt;&lt;br&gt;{path=/produkte}&lt;br&gt;BestellungResource" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="130" width="510" height="140" as="geometry" />
         </mxCell>
         <mxCell id="6v_-jyaMjuEqhTsef6yV-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="6v_-jyaMjuEqhTsef6yV-1" vertex="1">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+          <mxGeometry y="50" width="510" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="6v_-jyaMjuEqhTsef6yV-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="6v_-jyaMjuEqhTsef6yV-1" vertex="1">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        <mxCell id="6v_-jyaMjuEqhTsef6yV-4" value="&amp;lt;&amp;lt;GET&amp;gt;&amp;gt; +getBestellungen(status: Status): Collection&amp;lt;Bestellung&amp;gt;&lt;br&gt;&amp;lt;&amp;lt;GET&amp;gt;&amp;gt;&amp;lt;&amp;lt;Path&amp;gt;&amp;gt;{path=/{id}} + get(id: UUID): Bestellung&lt;br&gt;&amp;lt;&amp;lt;POST&amp;gt;&amp;gt; +add(bestellung: Bestellung): Collection&amp;lt;Bestellung&amp;gt;&lt;br&gt;&amp;lt;&amp;lt;PUT&amp;gt;&amp;gt;&amp;lt;&amp;lt;path&amp;gt;&amp;gt;{path=/{id}} +update(bestellung: Bestellung): Collection&amp;lt;Bestellung&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="6v_-jyaMjuEqhTsef6yV-1" vertex="1">
+          <mxGeometry y="58" width="510" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="iMCJh3czCJVGlUsnVCs7-1" value="Bestellung&lt;br&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="380" width="370" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="iMCJh3czCJVGlUsnVCs7-5" value="-id: UUID&lt;br&gt;-Bestellpositionen: List&amp;lt;Produkt&amp;gt;&lt;br&gt;-kunde: Kunde&lt;br&gt;-status: Status" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="iMCJh3czCJVGlUsnVCs7-1">
+          <mxGeometry y="50" width="370" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iMCJh3czCJVGlUsnVCs7-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="iMCJh3czCJVGlUsnVCs7-1">
+          <mxGeometry y="120" width="370" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="iMCJh3czCJVGlUsnVCs7-7" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.468;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.478;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;endFill=0;startArrow=open;startFill=0;" edge="1" parent="1" source="iMCJh3czCJVGlUsnVCs7-1" target="6v_-jyaMjuEqhTsef6yV-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="420" as="sourcePoint" />
+            <mxPoint x="490" y="280" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
